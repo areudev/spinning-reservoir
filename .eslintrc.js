@@ -15,6 +15,9 @@ module.exports = {
     {
       files: ['tests/**/*.ts'],
       env: {node: true, jest: true},
+      parserOptions: {
+        project: './tests/tsconfig.json',
+      },
     },
     {
       extends: ['plugin:@typescript-eslint/disable-type-checked'],
