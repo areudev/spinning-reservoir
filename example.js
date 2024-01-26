@@ -1,4 +1,4 @@
-import CircleBuffer from './src/index'
+const CircleBuffer = require('./dist/index.js').default
 
 const buffer = new CircleBuffer(20)
 
