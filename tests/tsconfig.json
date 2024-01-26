@@ -1,0 +1,9 @@
+{
+  "extends": "../tsconfig.json",
+  "references": [{"name": "spinning-reservoir", "path": ".."}],
+  "compilerOptions": {
+    "types": ["jest"],
+    "rootDir": ".."
+  },
+  "include": ["."]
+}

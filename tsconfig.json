@@ -15,7 +15,8 @@
     "noUnusedParameters": true,
     "exactOptionalPropertyTypes": true,
     "noImplicitReturns": true,
-    "skipLibCheck": false
+    "skipLibCheck": false,
+    "composite": true
   },
   "include": ["src", ".eslintrc.js"]
 }
