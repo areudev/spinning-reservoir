@@ -1,15 +1,16 @@
 {
   "name": "spinning-reservoir",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Spinning Reservoir is a TypeScript class that implements a circular buffer with a fixed maximum size. ",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "lint": "eslint src --ext js,ts",
     "test": "jest"
   },
   "keywords": [],
-  "author": "",
+  "author": "areudev",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.23.9",
