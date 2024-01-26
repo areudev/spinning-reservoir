@@ -30,11 +30,11 @@ module.exports = {
       },
     },
   ],
-
+  ignorePatterns: ['node_modules/', 'dist/', 'example.js'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
-    project: true,
+    project: './tsconfig.json',
     tsconfigRootDir: __dirname,
     sourceType: 'module',
   },

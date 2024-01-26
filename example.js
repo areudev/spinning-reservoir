@@ -1,5 +1,4 @@
 const CircleBuffer = require('./dist/index.js').default
-// import CircleBuffer from './dist/index.js'
 
 const buffer = new CircleBuffer(20)
 
