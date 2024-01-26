@@ -7,7 +7,7 @@ class SpinningReservoir<T> {
 
   constructor(maxSize: number = 10) {
     this.maxSize = maxSize
-    this.buffer = new Array(maxSize)
+    this.buffer = new Array<T | undefined>(maxSize)
   }
 
   push(value: T): SpinningReservoir<T> {
@@ -47,7 +47,7 @@ class SpinningReservoir<T> {
       throw new Error('maxSize must be an integer greater than 0')
     }
     if (value < this.count) {
-      const newData = new Array(value)
+      const newData = new Array<T | undefined>(value)
       for (let i = 0; i < value; i++) {
         newData[i] = this.buffer[(this.start + i) % this.maxSize]
       }
@@ -55,7 +55,7 @@ class SpinningReservoir<T> {
       this.start = 0
       this.end = this.count = value
     } else if (value > this.maxSize) {
-      const newData = new Array(value)
+      const newData = new Array<T | undefined>(value)
       for (let i = 0; i < this.count; i++) {
         newData[i] = this.buffer[(this.start + i) % this.maxSize]
       }
