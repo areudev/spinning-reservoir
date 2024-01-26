@@ -1,4 +1,4 @@
-import CircleBuffer from './circular-buffer'
+import CircleBuffer from './src/index'
 
 const buffer = new CircleBuffer(20)
 
