@@ -42,6 +42,14 @@ class SpinningReservoir<T> {
     return this.maxSize
   }
 
+  get values(): T[] {
+    const values = new Array<T>(this.count)
+    for (let i = 0; i < this.count; i++) {
+      values[i] = this.buffer[(this.start + i) % this.maxSize] as T
+    }
+    return values
+  }
+
   set maxSizeValue(value: number) {
     if (!Number.isInteger(value) || value <= 0) {
       throw new Error('maxSize must be an integer greater than 0')
