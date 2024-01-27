@@ -97,7 +97,7 @@ console.log(buffer.maxSizeValue) // 20
 Returns an iterator that iterates over the items in the buffer in the order they were added.
 
 ```ts
-const buffer = new CircleBuffer<string>()
+const buffer = new SpinningReservoir<string>()
 
 buffer.push('hi')
 buffer.push('there')
