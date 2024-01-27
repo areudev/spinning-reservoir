@@ -9,6 +9,15 @@
     "lint": "eslint src --ext js,ts",
     "test": "jest"
   },
+  "files": [
+    "dist",
+    "package.json",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/areudev/spinning-reservoir"
+  },
   "keywords": [],
   "author": "areudev",
   "license": "MIT",
